@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" lang="en">
+    <title>SchemaCrawler Example</title>
+    <link rel="stylesheet" type="text/css" href="./sc.css">
+    <link rel="stylesheet" type="text/css" href="../sc.css">
+    <link rel="stylesheet" type="text/css" href="../../sc.css">
+  </head>
+  <body>
+    <main>
+<h1>SchemaCrawler - PostgreSQL Dump Example</h1>
+<h2>Description</h2>
+<p>SchemaCrawler allows loading PostgreSQL database dumps. This example shows how to load a PostgreSQL database dump and run SchemaCrawler commands against it.</p>
+<h2>How to Setup</h2>
+<ol>
+<li>Make sure that java is on your PATH</li>
+<li>Start a command shell in the <code>_downloader</code> directory</li>
+<li>Run <code>download.cmd postgresql-embedded</code> (or <code>download.sh postgresql-embedded</code> on Unix) to install PostgreSQL support</li>
+<li>Run <code>postgresql-embedded.cmd</code> (or <code>postgresql-embedded.sh</code> on Unix) to download the PostgreSQL database software</li>
+</ol>
+<h2>How to Run</h2>
+<ol>
+<li>Start a command shell in the <code>postgresql</code> example directory</li>
+<li>Download an example <a href="http://postgresguide.com/setup/example.html">PostgreSQL database dump</a>, and save it as <code>example.database</code></li>
+<li>Run <code>postgresql.cmd -database example.database -infolevel standard -c schema</code> (or <code>postgresql.sh -database example.database -infolevel standard -c schema</code> on Unix)</li>
+</ol>
+<h2>How to Experiment</h2>
+<ol>
+<li>Run different SchemaCrawler commands.</li>
+</ol>
+
+    </main>
+    <footer>
+      <hr/>
+      Copyright &copy; 2000-2019, Sualeh Fatehi. <br />
+      <a href="https://www.schemacrawler.com/">SchemaCrawler</a>
+    </footer>
+  </body>
+</html>

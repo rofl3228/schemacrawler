@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" lang="en">
+    <title>SchemaCrawler Example</title>
+    <link rel="stylesheet" type="text/css" href="./sc.css">
+    <link rel="stylesheet" type="text/css" href="../sc.css">
+    <link rel="stylesheet" type="text/css" href="../../sc.css">
+  </head>
+  <body>
+    <main>
+<h1>SchemaCrawler Shell Example</h1>
+<h2>Description</h2>
+<p>The shell example demonstrates the use of SchemaCrawler Shell.</p>
+<h2>How to Run</h2>
+<ol>
+<li>Make sure that java is on your PATH</li>
+<li>Start the test database server by following instructions in the <code>_testdb/README.html</code> file</li>
+<li>Start a command shell in the <code>_downloader</code> directory</li>
+<li>Run <code>download.cmd shell</code> (or <code>download.sh shell</code> on Unix) to<br />
+install SchemaCrawler Shell support</li>
+<li>Copy the <code>schemacrawler-shell.cmd</code> and <code>schemacrawler-shell.sh</code> files into the<br />
+the <code>_schemacrawler</code> directory</li>
+<li>Start a command shell in the SchemaCrawler distribution directory,<br />
+that is, the <code>_schemacrawler</code> directory</li>
+<li>Run <code>schemacrawler-shell.cmd</code> (or <code>schemacrawler-shell.sh</code> on Unix)</li>
+<li>Run the <code>help</code> command in SchemaCrawler Shell</li>
+<li>Run the following commands in SchemaCrawler Shell</li>
+</ol>
+<pre><code>connect -server hsqldb -user sa -database schemacrawler
+load-catalog -infolevel maximum
+execute -command details
+</code></pre>
+<h2>How to Experiment</h2>
+<ol>
+<li>Try using different SchemaCrawler Shell commands.</li>
+</ol>
+
+    </main>
+    <footer>
+      <hr/>
+      Copyright &copy; 2000-2019, Sualeh Fatehi. <br />
+      <a href="https://www.schemacrawler.com/">SchemaCrawler</a>
+    </footer>
+  </body>
+</html>
